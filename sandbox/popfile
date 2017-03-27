@@ -1,0 +1,52 @@
+# Classes
+
+# TODO:
+# - we need an enum function 
+# - we need a parser
+# - we need interfile referencing
+# - we need a way to define and then read schema
+# - we need defaults; if part of the schema (eg "icon" is left out, just use default)
+
+# SOMEDAY:
+# - Sublime Text plugin for parsing
+
+{
+	"classes" : [
+		{
+			"name" : String,
+			"population" : "upgrades.pop"
+		}
+	]
+}
+
+assets = [
+	{
+		id 			: 1
+	    title 		: "Lemonade Stand"
+	    description : "Your friendly neighborhood lemonade stand, selling delicious lemonades at a great price."
+	    base_cost	: 10000000
+	    icon 		: "asset_lemonade_stand"
+	    plural 		: "lemonade stands"
+	    singular    : "a lemonade stand"
+	}
+]
+
+upgrades = [
+	
+	{
+		id				: 1
+		title			: "Penny Stocks"
+		description		: "Sure, maybe they're a little shady sometimes, but hey, you gotta start somewhere, right?"
+		cost 			: 0
+		icon        	: "15a"
+		asset       	: stockbroker
+		bonus_income 	: 3000000
+		buffs			: [
+			{
+				type	: income_mod
+				value	: 0.7
+			}
+		]
+	}
+
+]
