@@ -1,0 +1,2 @@
+# datapop
+This is a data population and schema definition command line tool built in Python. It's intention is to allow creators like game designers to define internal data schema, populate that schema (e.g. a list of monsters or items) easily in a way that doesn't require specialized tools or technical skills, and then encrypt the resulting file so that players can't hack into the guts of the system to find your carefully hidden easter eggs.
