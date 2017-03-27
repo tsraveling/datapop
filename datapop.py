@@ -1,5 +1,6 @@
 import click
 
+
 @click.command()
 @click.option('--verbose', is_flag=True, help="Will print verbose messages.")
 @click.option('--name', '-n', multiple=True, default='', help='Who are you?')
@@ -13,5 +14,5 @@ def cli(verbose,name,f,country):
 	click.echo('hello {0}'.format(country))
 	for n in name:
 		click.echo("Bye {0}".format(n))
-	click.echo("This is "+("fun" if f else "not fun")+"!")
-	# click.echo('We received {0} as password.'.format(password))
+	click.echo("This is " + ("fun" if f else "not fun") + "!")
+		# click.echo('We received {0} as password.'.format(password))
